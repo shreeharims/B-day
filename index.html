@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hey idiot… today is your birthday 🎂</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Audio Element -->
+    <audio id="background-music" loop>
+        <source src="music/beabadoobee - Glue Song (Lyrics).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Mute Button -->
+    <button id="mute-btn" class="mute-btn">🔊</button>
+    
+    <!-- Test Music Button (Temporary) -->
+    <button id="test-music-btn" class="test-music-btn">🎵 Test Music</button>
+    
+    <!-- Floating decorations -->
+    <div class="floating-emojis">
+        <span class="float balloon">🎈</span>
+        <span class="float star">⭐</span>
+        <span class="float cake">🎂</span>
+        <span class="float balloon">🎈</span>
+        <span class="float star">⭐</span>
+        <span class="float cake">🎂</span>
+    </div>
+
+    <!-- PAGE 1: Landing -->
+    <div id="landing-page" class="page active">
+        <div class="content">
+            <h1>Hey idiot… today is your birthday 🎂</h1>
+            <p class="subtext">You have been selected for an important birthday mission.</p>
+            <div class="buttons">
+                <button id="yes-btn" class="btn yes-btn">YES 🎉</button>
+                <button id="no-btn" class="btn no-btn">NO 😒</button>
+            </div>
+            <p id="landing-message"></p>
+        </div>
+    </div>
+
+    <!-- PAGE 2: Questions -->
+    <div id="questions-page" class="page">
+        <div class="content">
+            <div id="question-container">
+                <h2 id="question-text"></h2>
+                <div id="question-buttons" class="buttons"></div>
+                <p id="question-response"></p>
+            </div>
+            <button id="bonus-btn" class="bonus-btn">Do NOT click this</button>
+        </div>
+    </div>
+
+    <!-- PAGE 3: Fake Analysis -->
+    <div id="analysis-page" class="page">
+        <div class="content hacker-style">
+            <h2>🤖 Analyzing birthday energy…</h2>
+            <div class="loading-bar">
+                <div id="progress-bar"></div>
+            </div>
+            <p id="loading-message">Initializing birthday scanner...</p>
+            <div class="glitch-text" id="glitch-effect"></div>
+        </div>
+    </div>
+
+    <!-- PAGE 4: Random Facts -->
+    <div id="facts-page" class="page">
+        <div class="content">
+            <h2>🎉 Important Birthday Facts</h2>
+            <div class="fact-card">
+                <p id="fact-text"></p>
+            </div>
+            <button id="next-fact-btn" class="btn">Reveal important birthday facts</button>
+        </div>
+    </div>
+
+    <!-- PAGE 5: Certificate -->
+    <div id="certificate-page" class="page">
+        <div class="content">
+            <div class="certificate">
+                <div class="certificate-border">
+                    <div class="certificate-header">
+                        <h3>OFFICIAL CERTIFICATE</h3>
+                        <p>Issued by the International Birthday Committee™</p>
+                    </div>
+                    <h2>CERTIFIED PROFESSIONAL BIRTHDAY HUMAN</h2>
+                    <div class="achievements">
+                        <div class="achievement">✅ Survived another year</div>
+                        <div class="achievement">✅ Cake consumption mastery</div>
+                        <div class="achievement">✅ Professional procrastinator</div>
+                        <div class="achievement">✅ Increased age level +1</div>
+                        <div class="achievement">✅ Emotional damage resistance upgraded</div>
+                    </div>
+                    <div class="signatures">
+                        <div class="signature-section">
+                            <div class="signature-line"></div>
+                            <div class="signature-name">Dr. Birthday Expert</div>
+                            <div class="signature-title">The Birthday Authorities</div>
+                        </div>
+                        <div class="signature-section">
+                            <div class="signature-line"></div>
+                            <div class="signature-name">Certified Approver</div>
+                            <div class="signature-title">APPROVED ✅</div>
+                        </div>
+                    </div>
+                    <button id="accept-honor-btn" class="btn">Accept Honor</button>
+                    <div id="approval-stamp" class="stamp">APPROVED ✅</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FINAL PAGE: Big Reveal -->
+    <div id="final-page" class="page">
+        <div class="content">
+            <div class="confetti-container"></div>
+            <h1 class="glow-text">🎉 HAPPY BIRTHDAY 🎉</h1>
+            <p class="subtext">You survived another year somehow.</p>
+            <p class="message">Hope this year brings happiness, success, peace, and unlimited cake.</p>
+            <button id="claim-cake-btn" class="btn final-btn">Claim Cake</button>
+            <div id="error-popup" class="error-popup">
+                <h3>ERROR 404:</h3>
+                <p>Cake already eaten.</p>
+                <small>Better luck next birthday.</small>
+            </div>
+            <!-- Hidden Emergency Birthday Button -->
+            <button id="emergency-btn" class="emergency-btn">🎁 Emergency Birthday Button</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
